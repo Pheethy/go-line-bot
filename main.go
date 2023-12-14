@@ -53,11 +53,11 @@ func main() {
 							log.Println("err:", err)
 						}
 					} else if message.Text == "ทำไร" {
-						if _, err := bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("ไม่ทำอะไรนะจะนอน")).Do(); err != nil {
+						if _, err := bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("ขอนอนเถอะครับพี่")).Do(); err != nil {
 							log.Println("err:", err)
 						}
 					} else {
-						if _, err := bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("พอเถอะง่วงแล้ววว")).Do(); err != nil {
+						if _, err := bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("อ่านไม่ตอบเห็นเราเป็นข้อสอบหรือไง")).Do(); err != nil {
 							log.Println("err:", err)
 						}
 					}
